@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>近衛篤誠的主頁</title>
+    <style>
+        body {
+    font-family: 'Yu Mincho', 'Hiragino Mincho Pro', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0f7fa;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+}
+
+header {
+    background-color: #b3e5fc;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #0288d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.affiliation {
+    font-size: 0.8em;
+    color: #666;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #01579b;
+}
+
+section {
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #0288d1;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+    .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-section, .photo-section {
+    background-color: #ffffff;
+    border: 1px solid #0288d1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+/* 左の本文ボックス */
+.content-section {
+    flex: 3;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+/* 右の写真ボックス */
+.photo-section {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.photo-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #90a4ae; /* 枠線を追加 */
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* レスポンシブ対応 */
+@media (max-aspect-ratio: 4/3) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .photo-section img {
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 8px;
+        border: 2px solid #90a4ae;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .content-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Personal Homepage of Tokusei Konoe</h1>
+    <div class="affiliation"><a href="https://math.fudan.edu.cn">School of Mathematical Sciences </a> <br>
+        Fudan University <br>
+        2-2-0, Handan Road, Yangpu District 20-0900, Shanghai</div>
+    <nav>
+        <a href="index.html">English</a>
+        <a href="index_tc.html">Chinese</a>
+    </nav>
+</header>
+
+<main class="main-container">
+    <section class="content-section">
+    <p>My name is Sen Jiang. Since 2026, I'm an undergraduate student at Fudan University.</p>
+
+    <p><a href="cv.pdf">Curriculum Vitae</a>, Email: Chisei.Minamoto@outlook.com</p>
+
+    <h2>My Research Interest</h2>
+    <p>I am interested in 𝑝-adic geometry and categorical 𝑝-adic Langlands correspondence.</p>
+
+    <h2>Papers/Preprints</h2>
+    <ul>
+        <li>1. with xxx, <a href="https">nothing</a> hhhhh</li>
+    </ul>
+
+    <h2>Others</h2>
+    <ul>
+        <li>1. <a href="https">xxx</a> a</li>
+    </ul>
+</section>
+
+<section class="photo-section">
+    <img src="photo.jpg" alt="js">
+</section>
+</main>
+
+</body>
+</html>
